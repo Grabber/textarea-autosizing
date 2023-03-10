@@ -20,7 +20,7 @@ npm run build
 npm run start
 ```
 
-## index.css
+## parameterization / index.css
 ```
 :root {
   --textarea-font-size: 12pt;
