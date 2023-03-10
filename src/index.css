@@ -1,5 +1,5 @@
 :root {
-  --textarea-font-size: 24pt;
+  --textarea-font-size: 12pt;
   --textarea-line-height: 1.2em;
   --textarea-max-number-of-lines: 5;
 }
