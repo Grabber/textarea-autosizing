@@ -1,5 +1,5 @@
 :root {
-  --textarea-font-size: 12pt;
+  --textarea-font-size: 24pt;
   --textarea-line-height: 1.2em;
   --textarea-max-number-of-lines: 5;
 }
@@ -19,18 +19,19 @@
   background-color: gray;
 }
 
-.container {
+.textarea-autosize-container {
   display: flex;
   background-color: #00ff00;
   padding: 2px 2px 2px 2px;
   overflow: hidden hidden;
 }
 
-#textarea-autosize {
+.textarea-autosize-container > #textarea-autosize {
   margin: 0;
   padding: 0;
   border: 0;
   outline: none;
+  white-space: pre;
   resize: none;
   background-color: #ffffff;
   overflow: hidden auto;
@@ -40,13 +41,13 @@
   max-height: calc(var(--textarea-line-height) * var(--textarea-max-number-of-lines));
 }
 
-#textarea-autosize:focus {
+.textarea-autosize-container > #textarea-autosize:focus {
   outline: none;
   font-size: var(--textarea-font-size);
   line-height: var(--textarea-line-height);
 }
 
-#textarea-autosize:placeholder {
+.textarea-autosize-container > #textarea-autosize:placeholder {
   outline: none;
   resize: none;
   line-height: var(--textarea-line-height);

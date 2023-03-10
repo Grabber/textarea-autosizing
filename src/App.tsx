@@ -16,16 +16,15 @@ export default function App() {
 
   return (
     <>
-
     <div className="app">
-      <div className="container">
+      <div className="textarea-autosize-container">
         <textarea id="textarea-autosize"
-                        onChange={handleTextAreaOnChange}
-                        placeholder="Type a message"
-                        ref={textAreaRef}
-                        rows={1}
-                        value={textAreaValue}
-                        autoCapitalize="off" autoComplete="off" autoCorrect="off" spellCheck="false"/>
+                  onChange={handleTextAreaOnChange}
+                  placeholder="Type a message"
+                  ref={textAreaRef}
+                  rows={1}
+                  value={textAreaValue}
+                  autoCapitalize="off" autoComplete="off" autoCorrect="off" spellCheck="false"/>
       </div>
     </div>
     </>
