@@ -1,6 +1,6 @@
 :root {
   --textarea-font-size: 12pt;
-  --textarea-line-height: 1.2rem;
+  --textarea-line-height: 1.2em;
   --textarea-max-number-of-lines: 5;
 }
 
@@ -16,7 +16,6 @@ body {
 
 .app {
   display: flex;
-  flex: 0 0 auto;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -26,40 +25,33 @@ body {
 
 .container {
   display: flex;
-  flex-direction: row;
-/*  align-items: center;*/
-/*  justify-content: center;*/
-  background-color: red;
-/*  padding: 2px 2px 2px 2px;*/
+  background-color: #00ff00;
+  padding: 2px 2px 2px 2px;
   overflow: hidden hidden;
 }
 
 #textarea-autosize {
-  outline: none;
   margin: 0;
   padding: 0;
   border: 0;
+  outline: none;
   resize: none;
-  background-color: white;
+  background-color: #ffffff;
   overflow: hidden auto;
   font-size: var(--textarea-font-size);
-  min-height: 1.2em;
-  line-height: 1.2em;
-  max-height: calc(1.2em * var(--textarea-max-number-of-lines));
+  line-height: var(--textarea-line-height);
+  min-height: var(--textarea-line-height);
+  max-height: calc(var(--textarea-line-height) * var(--textarea-max-number-of-lines));
 }
 
 #textarea-autosize:focus {
   outline: none;
-  line-height: 1.2em;
-/*  line-height: var(--textarea-line-height);*/
+  font-size: var(--textarea-font-size);
+  line-height: var(--textarea-line-height);
 }
 
 #textarea-autosize:placeholder {
   outline: none;
-  margin: 0;
-  padding: 0;
-  border: 0;
   resize: none;
-/*  font-size: var(--textarea-font-size);*/
   line-height: var(--textarea-line-height);
 }
