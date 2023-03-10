@@ -31,7 +31,7 @@
   padding: 0;
   border: 0;
   outline: none;
-  white-space: pre;
+  cursor: auto;
   resize: none;
   background-color: #ffffff;
   overflow: hidden auto;
@@ -39,6 +39,9 @@
   line-height: var(--textarea-line-height);
   min-height: var(--textarea-line-height);
   max-height: calc(var(--textarea-line-height) * var(--textarea-max-number-of-lines));
+
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2);
 }
 
 .textarea-autosize-container > #textarea-autosize:focus {
@@ -51,4 +54,18 @@
   outline: none;
   resize: none;
   line-height: var(--textarea-line-height);
+}
+
+.textarea-autosize-container > #textarea-autosize::-webkit-scrollbar {
+  width: 3px;
+}
+
+.textarea-autosize-container > #textarea-autosize::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.textarea-autosize-container > #textarea-autosize::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
 }
