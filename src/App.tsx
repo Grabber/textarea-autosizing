@@ -1,18 +1,17 @@
 import { useRef, useState } from "react";
 
-import useTextAreaAutoSize from "./useTextAreaAutoSize";
+import useTextAreaAutoSizing from "./useTextAreaAutoSizing";
 
 import "./index.css";
 
 export default function App() {
-  const [value, setValue] = useState("");
+  const [textAreaValue, setTextAreaValue] = useState("");
   const textAreaRef = useRef<HTMLTextAreaElement>(null);
 
-  useTextAreaAutoSize(textAreaRef.current, value);
+  useTextAreaAutoSizing(textAreaRef.current, textAreaValue);
 
-  const handleOnChange = (evt: React.ChangeEvent<HTMLTextAreaElement>) => {
-    const val = evt.target?.value;
-    setValue(val);
+  const handleTextAreaOnChange = (evt: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setTextAreaValue(evt.target?.value);
   };
 
   return (
@@ -21,11 +20,11 @@ export default function App() {
     <div className="app">
       <div className="container">
         <textarea id="textarea-autosize"
-                        onChange={handleOnChange}
+                        onChange={handleTextAreaOnChange}
                         placeholder="Type a message"
                         ref={textAreaRef}
                         rows={1}
-                        value={value}
+                        value={textAreaValue}
                         autoCapitalize="off" autoComplete="off" autoCorrect="off" spellCheck="false"/>
       </div>
     </div>

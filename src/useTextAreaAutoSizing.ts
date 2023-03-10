@@ -1,12 +1,12 @@
 import { useEffect } from "react";
 
-const useTextAreaAutoSize = (
+const useTextAreaAutoSizing = (
   textAreaRef: HTMLTextAreaElement | null,
   valueStr: string
 ) => {
   useEffect(() => {
     if (textAreaRef) {
-      var s = 0;
+      let s = 0;
 
       if (textAreaRef.innerHTML.length == 0)
         s = -1;
@@ -20,4 +20,4 @@ const useTextAreaAutoSize = (
   }, [textAreaRef, valueStr]);
 };
 
-export default useTextAreaAutoSize;
+export default useTextAreaAutoSizing;
