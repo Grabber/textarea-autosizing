@@ -25,7 +25,7 @@ body {
 }
 
 textarea {
-  width: 50%;
+  width: 24ch;
   margin: 0;
   padding: 2px 2px 2px 2px;
   border: 0;
