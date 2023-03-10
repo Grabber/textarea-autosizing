@@ -20,7 +20,7 @@ npm run build
 npm run start
 ```
 
-## parameters for customization
+## index.css
 ```
 :root {
   --textarea-font-size: 12pt;
@@ -28,7 +28,8 @@ npm run start
   --textarea-max-number-of-lines: 5;
 }
 ```
-  
+
+## screenshots
 ![Screenshot 2023-03-10 at 18 00 43](https://user-images.githubusercontent.com/15731/224427382-85f34fcf-ebc9-4264-83d9-bbca57f6c4bc.png)
 
 ![Screenshot 2023-03-10 at 18 01 03](https://user-images.githubusercontent.com/15731/224427450-8e985a8d-b6f0-462f-a985-23c49875ec25.png)
