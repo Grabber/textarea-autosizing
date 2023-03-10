@@ -9,7 +9,7 @@ Chrome: Version 110.0.5481.177 (Official Build) (x86_64)
 Chromium: Version 113.0.5620.0 (Developer Build) (x86_64)
 ```
 
-## how to?
+### how to?
 ```
 git clone git@github.com:Grabber/textarea-autosizing.git
 ```
@@ -20,7 +20,7 @@ npm run build
 npm run start
 ```
 
-## parameterization / index.css
+### parameterization / index.css
 ```
 :root {
   --textarea-font-size: 12pt;
@@ -29,7 +29,7 @@ npm run start
 }
 ```
 
-## screenshots
+### screenshots
 ![Screenshot 2023-03-10 at 18 00 43](https://user-images.githubusercontent.com/15731/224427382-85f34fcf-ebc9-4264-83d9-bbca57f6c4bc.png)
 
 ![Screenshot 2023-03-10 at 18 01 03](https://user-images.githubusercontent.com/15731/224427450-8e985a8d-b6f0-462f-a985-23c49875ec25.png)
