@@ -1,6 +1,6 @@
 ## textarea-autosizing
 
-It implements a vertical auto-resizer for the <textarea> HTML element for React and has been tested on the following browsers (March/2023):
+It implements a vertical auto-resizer for the <textarea> HTML element using React and seems to properly work on:
 
 ```
 Safari: Version 16.3 (18614.4.6.1.6)
