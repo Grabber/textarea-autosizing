@@ -18,18 +18,15 @@ export default function App() {
   return (
     <>
 
-    <div className="container">
-      <textarea
-        id="revew-text"
-        onChange={handleOnChange}
-        placeholder="Type a message"
-        ref={textAreaRef}
-        rows={1}
-        value={value}
-        autoCapitalize="off" autoComplete="off" autoCorrect="off" spellCheck="false"
-      />
+    <div className="app">
+      <textarea id="textarea-autosize"
+                      onChange={handleOnChange}
+                      placeholder="Type a message"
+                      ref={textAreaRef}
+                      rows={1}
+                      value={value}
+                      autoCapitalize="off" autoComplete="off" autoCorrect="off" spellCheck="false"/>
     </div>
-
     </>
   );
 }
