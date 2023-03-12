@@ -1,13 +1,6 @@
 ## textarea-autosizing
 
-It implements a vertical auto-resizer for the <textarea> HTML element using React and it seems to be properly working on:
-
-```
-Safari: Version 16.3 (18614.4.6.1.6)
-Firefox:  111.0 (64-bit)
-Chrome: Version 110.0.5481.177 (Official Build) (x86_64)
-Chromium: Version 113.0.5620.0 (Developer Build) (x86_64)
-```
+It implements a vertical auto-resizer for the <textarea> HTML element using React. A simpler version without Typescript and using classes on React is available here: https://gist.github.com/Grabber/ddd7ad77e5053910397568ddf5d07586
 
 ### how to?
 ```
@@ -18,6 +11,14 @@ git clone git@github.com:Grabber/textarea-autosizing.git
 npm install
 npm run build
 npm run start
+```
+
+### has it been tested?
+```
+Safari: Version 16.3 (18614.4.6.1.6)
+Firefox:  111.0 (64-bit)
+Chrome: Version 110.0.5481.177 (Official Build) (x86_64)
+Chromium: Version 113.0.5620.0 (Developer Build) (x86_64)
 ```
 
 ### parameterization / index.css
