@@ -13,7 +13,7 @@ npm run build
 npm run start
 ```
 
-### has it been tested?
+### tested?
 ```
 Safari: Version 16.3 (18614.4.6.1.6)
 Firefox:  111.0 (64-bit)
