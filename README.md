@@ -1,6 +1,8 @@
 ## textarea-autosizing
 
-It implements a vertical auto-resizer for the <textarea> HTML element using React. A simpler version without Typescript and using classes on React is available here: https://gist.github.com/Grabber/ddd7ad77e5053910397568ddf5d07586
+It implements a vertical auto-resizer for the <textarea> HTML element using React.
+
+A simpler version without Typescript and React (with class) is available here: https://gist.github.com/Grabber/ddd7ad77e5053910397568ddf5d07586
 
 ### how to?
 ```
